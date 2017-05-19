@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+<RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/a1"
+        android:src="@drawable/welcome_header"
+        android:gravity="center"
+        android:background="#4c8ba4"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"/>
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/a2"
+        android:src="@drawable/anu_small"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/rounded_bg"
+        android:padding="3dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WARM\nWELCOME"
+        android:fontFamily="sans-serif-thin"
+        android:id="@+id/text_dialog"
+        android:layout_below="@+id/a1"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="25sp"
+        android:textColor="#a44c53"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:gravity="right" />
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/text_dialog"
+        android:background="#cecdcd"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to RYM Magazine's 11th edition. We are so glad to have you here. Enjoy rich articles and get updated on the go with RYM News Feeds. Stay blessed as you enjoy our features. Remember to share with friends."
+        android:layout_below="@+id/line"
+        android:layout_margin="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#222"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Signed:\nWAHAB Anuoluwapo"
+        android:layout_below="@+id/text"
+        android:textColor="#222"
+        android:paddingBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok, thanks"
+        android:textStyle="bold"
+        android:textColor="#a44c53"
+        android:background="@drawable/rounded_bg2"
+        android:padding="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/text"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:textSize="15dp"/>
+</RelativeLayout>
+        </ScrollView>
+    </LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        style="@style/FullScreen.TextAppearance.Title"
+        android:elevation="4dp"
+        android:background="?attr/colorPrimary"
+        tools:ignore="UnusedAttribute">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:src="@mipmap/rym_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            tools:ignore="UnusedAttribute" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start" >
+
+        <TextView android:id="@+id/title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  tools:ignore="PrivateResource"
+                  style="@style/FullScreen.TextAppearance.Title.Inverse"
+                  android:text="RYM MAGAZINE"
+                  android:textColor="#fff"/>
+        <TextView
+            android:id="@+id/online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="online..."
+            android:layout_below="@+id/title"
+            android:textColor="#fff"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/messageRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"/>
+        <TextView
+        android:id="@+id/topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#4b4b4b"
+        android:text="Topic"
+        android:alpha="0.4"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:background="@drawable/rounded_bg3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <ImageView
+            android:id="@+id/buttonEmoji"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="7dp"
+            android:src="@drawable/smiley"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/editTextMessage"
+            />
+
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextMessage"
+            android:hint="Enter message..."
+            android:layout_toStartOf="@+id/buttonImage"
+            android:layout_toRightOf="@+id/buttonEmoji"
+            android:layout_toEndOf="@+id/buttonEmoji"
+            android:layout_toLeftOf="@+id/buttonImage"
+            emojicon:emojiconSize="28sp"
+            android:singleLine="false"
+            android:inputType="textMultiLine|textCapSentences"
+            android:maxEms="10"
+            android:lines="5"
+            android:minLines="1"
+            android:gravity="top"
+            android:maxLines="10"
+            android:scrollbars="none"/>
+
+        <ImageView
+            android:id="@+id/buttonSend"
+            android:src="@mipmap/send"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/editTextMessage"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"/>
+
+        <Button
+            android:id="@+id/buttonRec"
+            android:background="@mipmap/rec"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@+id/buttonSend"
+            android:layout_alignBottom="@+id/editTextMessage"
+            android:layout_marginRight="10dp"
+            />
+        <ImageView
+            android:id="@+id/buttonImage"
+            android:src="@mipmap/image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@+id/buttonRec"
+            android:layout_alignBottom="@+id/editTextMessage"
+            />
+    </RelativeLayout>
+</LinearLayout>

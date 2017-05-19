@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_us_copyright" translatable="false">Copyright 2017 RYM MAGAZINE</string>
+    <string name="about_us_content" translatable="false"><![CDATA[
+    <b>Community</b><br/>
+    • RYM Magazine<br/><br/>
+
+    <b>Developer</b><br/>
+    • Anuoluwapo Wahab<br/><br/>
+
+
+    <b>Progress Analyst</b><br/>
+    • Ogunfeyimi Oluwasegun<br/>
+    • Daniyan Tobby<br/>
+    • Sylvester Glory<br/><br/>
+
+
+    The RYM News Feed is free and a part of RYM Magazine mobile application: you can freely distribute/share it with friends and family.<br/><br/>
+    Copyright © 2017 RYM MAGAZINE<br>Copyright © 2012-2015 Frederic Julian<br>Copyright © 2010-2012 Stefan Handschuh
+    ]]></string>
+
+    <string-array name="settings_interval_values" translatable="false">
+        <item>60000</item>
+        <item>300000</item>
+        <item>900000</item>
+        <item>1800000</item>
+        <item>3600000</item>
+        <item>7200000</item>
+        <item>21600000</item>
+        <item>43200000</item>
+        <item>86400000</item>
+    </string-array>
+    <string-array name="settings_keep_time_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>7</item>
+        <item>14</item>
+        <item>30</item>
+        <item>61</item>
+        <item>91</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="settings_font_size_values" translatable="false">
+        <item>-2</item>
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_preload_image_modes_values" translatable="false">
+        <item>NEVER_DISPLAYED</item>
+        <item>WIFI_ONLY_PRELOAD</item>
+        <item>ALWAYS_PRELOAD</item>
+    </string-array>
+</resources>

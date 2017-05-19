@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <RelativeLayout
+            android:id="@+id/rel"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profPics"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/no_pics"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#c4c4c4"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="#ed6802"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/counsellor"
+        android:layout_alignStart="@+id/counsellor"/>
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="status"
+        android:textColor="#636363"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="18dp"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/counsellor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="counsellor: Wahab Anuoluapo"
+        android:layout_below="@+id/name"
+        android:textColor="#636363"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/profPics"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dad9d9"
+        android:layout_below="@+id/profPics"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"/>
+
+
+        </RelativeLayout>

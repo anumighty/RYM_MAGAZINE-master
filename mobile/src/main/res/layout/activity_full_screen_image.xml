@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/v"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151515"
+    tools:context="com.rym.magazine.chat.view.FullScreenImageActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        tools:context="com.rym.magazine.chat.view.FullScreenImageActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        style="@style/FullScreen.TextAppearance.Title"
+        android:elevation="4dp"
+        tools:ignore="UnusedAttribute">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:src="@drawable/no_pics"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="PrivateResource"
+            style="@style/FullScreen.TextAppearance.Title.Inverse"
+                  android:textColor="#fff"
+            android:layout_gravity="center_vertical|start" />
+
+    </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#808080"
+        android:layout_below="@+id/toolbar1"/>
+
+    <com.rym.magazine.chat.view.TouchImageView
+        android:layout_below="@+id/separator"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"/>
+
+</RelativeLayout>

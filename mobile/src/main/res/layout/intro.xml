@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fff" >
+
+    <ViewFlipper
+        android:id="@+id/viewflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="6dp" >
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="RYM MAGAZINE"
+                android:textColor="#b7102f"
+                android:textSize="25dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Our latest edition now in your pocket."
+                android:textSize="14dp"
+                android:gravity="center_horizontal">
+            </TextView>
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/intro1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:background="#EFcb2424"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:id="@+id/button"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="News Feed"
+                android:textColor="#EFcb2424"
+                android:textSize="25dp"
+                android:textStyle="italic" >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Get updated with LOCAL and FOREIGN news."
+                android:padding="20dp"
+                android:gravity="center_horizontal">
+            </TextView>
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/intro5" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Features"
+                android:textColor="#EFcb2424"
+                android:textSize="25dp"
+                android:textStyle="italic" >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Express yourself on each article with our LIKE and COMMENT features and see comments from other readers."
+                android:textSize="14dp"
+                android:gravity="center_horizontal">
+            </TextView>
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/intro4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Menu Outlook"
+                android:textColor="#EFcb2424"
+                android:textSize="25dp"
+                android:textStyle="italic" >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Super awesome menu outlook with a roll down and fold up effect."
+                android:textSize="14dp"
+                android:gravity="center_horizontal">
+            </TextView>
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/intro3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Offline Reading"
+                android:textColor="#EFcb2424"
+                android:textSize="25dp"
+                android:textStyle="italic" >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="We support both ONLINE and OFFLINE reading."
+                android:textSize="14dp"
+                android:gravity="center_horizontal">
+            </TextView>
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/intro2" />
+
+        </LinearLayout>
+
+    </ViewFlipper>
+</LinearLayout>

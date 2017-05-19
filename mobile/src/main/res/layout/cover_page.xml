@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+        <ImageView
+            android:id="@+id/cover"
+            android:paddingTop="?actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cover2"
+            android:adjustViewBounds="true"/>
+
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="5sp"
+        android:paddingTop="5sp"
+        android:layout_marginBottom="10dp"
+        android:alpha="0.8"
+        android:background="#e9021d"/>
+    <TextView
+        android:id="@+id/countdownTxt"
+        android:text="                                                                                    COUNTDOWN: 14 days to go for the release of RYM Magazine 12th edition. Lunch RYM app in 12 days time and everything will look new."
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="5sp"
+        android:paddingTop="5sp"
+        android:textColor="#fff"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit ="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

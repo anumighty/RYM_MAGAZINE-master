@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/v"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#edecec">
+
+    <include layout="@layout/view_toolbar"
+             android:id="@+id/toolbar"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"/>
+    <RelativeLayout
+        android:id="@+id/chatmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+        <ImageView
+            android:id="@+id/sendBtn"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send_btn"/>
+        <EditText
+            android:id="@+id/message"
+            android:layout_toLeftOf="@+id/sendBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="16dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:singleLine="false"
+            android:inputType="textMultiLine|textCapSentences"
+            android:maxEms="10"
+            android:textSize="15sp"
+            android:hint="Enter your message"
+
+            android:lines="5"
+            android:minLines="2"
+            android:maxLines="10"
+            android:scrollbars="none"/>
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@+id/toolbar"
+        android:paddingTop="10dp"
+        android:layout_above="@+id/chatmessage"
+        android:divider="#00000000"
+        android:dividerHeight="5px"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv">
+    </ListView>
+
+
+
+
+</RelativeLayout>

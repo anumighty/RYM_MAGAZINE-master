@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.rym.magazine"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 58
+        versionName "1.3.0"
+    }
+
+    lintOptions {
+        // if true, stop the gradle build if errors are found
+        abortOnError true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+compile project(":libs:textdrawable")
+    //wearApp project(':wear')
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:recyclerview-v7:25.0.0'
+    compile 'com.android.support:design:25.0.0'
+    compile 'org.jsoup:jsoup:+'
+    compile 'com.github.bumptech.glide:glide:+'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:+'
+    compile 'com.google.code.gson:gson:2.3.1'
+
+
+    //Circular image library
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+
+    //CHAT UI
+    compile 'com.github.hani-momanii:SuperNova-Emoji:1.1'
+    compile 'me.himanshusoni.chatmessageview:chat-message-view:1.0.3'
+
+    // AUTH
+    compile 'com.google.firebase:firebase-auth:9.2.0'
+
+    //DATABASE FIREBASE,UI
+    compile 'com.google.firebase:firebase-database:9.2.0'
+    compile 'com.firebaseui:firebase-ui-database:0.4.1'
+
+    //STORAGE FIREBASE
+    compile 'com.google.firebase:firebase-storage:9.2.0'
+}
+apply plugin: 'com.google.gms.google-services'

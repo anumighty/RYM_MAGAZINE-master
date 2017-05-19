@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars = "vertical"
+        android:scrollbarStyle="insideInset"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/pics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eaeaea">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profPics"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/no_pics"
+                    app:civ_border_color="#c4c4c4"
+                    app:civ_border_width="2dp"/>
+
+                <TextView
+                    android:id="@+id/section_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profPics"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Click image to view picture in full screen"/>
+
+                <Button
+                    android:id="@+id/changeImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/section_label"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="Change Image"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/changeImage"
+                    android:background="#b7b7b7"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/surname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pics"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Surname"
+                android:textColor="#d93434"/>
+
+            <EditText
+                android:id="@+id/surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/surname1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Wahab"/>
+
+            <TextView
+                android:id="@+id/other_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/surname"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Other name"
+                android:textColor="#d93434"/>
+
+            <EditText
+                android:id="@+id/other_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/other_name1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Anuoluwapo"/>
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/other_name"
+                android:layout_gravity="center_horizontal"
+                android:text="Click text above to edit name"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:text="CHANGE PASSWORD"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

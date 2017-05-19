@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".MainActivity">
+    <include layout="@layout/view_toolbar"/>
+
+    <ListView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvMovies"
+        android:divider="#fff"/>
+    <LinearLayout
+        android:id="@+id/network_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15.0sp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/NetworkErrorTitle"/>
+
+        <TextView
+            android:id="@id/android:empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/NetworkErrorBody"/>
+        <TextView
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="REFRESH"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:textColor="#2f42be"/>
+    </LinearLayout>
+</RelativeLayout>
+
+

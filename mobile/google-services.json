@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1034156493657",
+    "firebase_url": "https://the-rym-magazine.firebaseio.com",
+    "project_id": "the-rym-magazine",
+    "storage_bucket": "the-rym-magazine.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034156493657:android:fb4d5e228f562f91",
+        "android_client_info": {
+          "package_name": "com.rym.magazine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034156493657-f26r4vajmsh09ugg31a9lgcbr3bkdpm3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW7V1yfUi2XPmxNfDHW-gqSTmmfeZCCUM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
